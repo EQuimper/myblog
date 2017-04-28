@@ -1,0 +1,42 @@
+{
+  "name": "blog",
+  "version": "0.0.1",
+  "description": "My new blog :)",
+  "main": "index.js",
+  "author": "Emanuel Quimper",
+  "license": "MIT",
+  "pre-commit": "lint-staged",
+  "lint-staged": {
+    "*.js": [
+      "yarn prettier",
+      "eslint",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "prettier": "node ./scripts/prettier.js write",
+    "lint-staged": "lint-staged"
+  },
+  "dependencies": {
+    "next": "^2.2.0",
+    "nprogress": "^0.2.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-fontawesome": "^1.6.1",
+    "react-youtube": "^7.4.0",
+    "styled-components": "^1.4.5"
+  },
+  "devDependencies": {
+    "chalk": "^1.1.3",
+    "eslint": "^3.19.0",
+    "eslint-config-equimper": "^1.6.3",
+    "eslint-config-prettier": "^1.7.0",
+    "glob": "^7.1.1",
+    "lint-staged": "^3.4.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.2.2"
+  }
+}
