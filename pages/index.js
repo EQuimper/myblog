@@ -49,16 +49,17 @@ export default class extends Component {
           }
 
           h1 {
-            font-size: 20px;
-            font-weight: normal;
+            font-size: 40px;
             color: ${colors.accent};
             text-align: center;
+            font-family: 'Fira Mono', monospace;
+            font-weight: bold;
           }
 
 
           a {
             color: ${colors.secondary};
-            font-size: 20px;
+            font-size: 25px;
             display: inline-block;
             margin: 0 15px;
             text-decoration: none;

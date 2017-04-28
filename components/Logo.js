@@ -19,6 +19,8 @@ export default ({ className }) => (
         left: 2%;
         font-size: 20px;
         text-decoration: none;
+        font-family: 'Fira Mono', monospace;
+        font-weight: bold;
       }
 
       .title-square {

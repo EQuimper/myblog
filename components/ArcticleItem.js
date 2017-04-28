@@ -3,7 +3,7 @@ import Link from 'next/link';
 import colors from '../constants/colors';
 
 export default ({ date, title, id }) => (
-  <Link href={`${new Date(date).getFullYear()}/${id}`}>
+  <Link prefetch href={`${new Date(date).getFullYear()}/${id}`}>
     <article>
       <h5>{date}</h5>
       <h4>{title}</h4>

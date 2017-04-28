@@ -12,9 +12,10 @@ export default ({ children, href, className }) => (
     <style jsx>{`
       a {
         color: ${colors.accent};
-        font-weight: bolder;
-        font-size: 16px;
         text-decoration: underline;
+        font-family: 'Fira Mono', monospace;
+        font-weight: bold;
+        margin: 4px;
       }
 
       a:hover {

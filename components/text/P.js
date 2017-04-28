@@ -10,6 +10,7 @@ export default ({ children, className }) => (
         margin: 5%;
         text-align: left;
         line-height: 20px;
+        font-size: 15px;
       }
 
       p.list {

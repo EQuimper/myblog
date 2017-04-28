@@ -9,6 +9,8 @@ export default ({ children }) => (
         color: ${colors.accent};
         text-align: center;
         padding: 20px 0;
+        font-family: 'Fira Mono', monospace;
+        font-weight: bold;
       }
     `}</style>
   </h1>

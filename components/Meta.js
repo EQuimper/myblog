@@ -18,14 +18,22 @@ export default () => (
         rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       />
+      <link
+        href="https://fonts.googleapis.com/css?family=Fira+Mono"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css?family=Fira+Sans"
+        rel="stylesheet"
+      />
       <script
         dangerouslySetInnerHTML={{
           __html: `(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', '${config.GA_ID}', 'auto');
-        ga('send', 'pageview');`,
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          ga('create', '${config.GA_ID}', 'auto');
+          ga('send', 'pageview');`,
         }}
       />
     </Head>
@@ -37,7 +45,8 @@ export default () => (
       }
 
       body {
-        font: 13px Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+        font: 15px Fira Sans, sans-serif;
+        letter-spacing: 1px;
       }
 
       a {
