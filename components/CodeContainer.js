@@ -21,8 +21,6 @@ export default ({ children }) => (
 
       @media (max-width: 500px) {
         pre {
-          font-size: 10px;
-          width: 100%;
           overflow-x: auto;
         }
       }

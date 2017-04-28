@@ -3,7 +3,7 @@ import Link from 'next/link';
 import colors from '../constants/colors';
 
 export default ({ date, title, id }) => (
-  <Link prefetch href={`${new Date(date).getFullYear()}/${id}`}>
+  <Link href={`${new Date(date).getFullYear()}/${id}`}>
     <article>
       <h5>{date}</h5>
       <h4>{title}</h4>
@@ -22,13 +22,8 @@ export default ({ date, title, id }) => (
 
         article:hover {
           border-bottom: 2px solid ${colors.accentRed};
-          height: 60px;
-          transform: scale(1.1);
+          text-decoration: underline;
           transition: all .2s ease-in-out;
-        }
-
-        article:hover > h4, h5 {
-          transform: scale(1.1);
         }
 
         h4 {

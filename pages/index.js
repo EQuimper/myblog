@@ -26,44 +26,47 @@ export default class extends Component {
       <Page>
         <Logo />
         {this.state.showLinks
-          ? <div className="link-container">
-              <Link href="/portfolio">
-                <a>PORTFOLIO</a>
-              </Link>
-              <Link href="/articles">
-                <a>ARTICLES</a>
-              </Link>
-              <a href="mailto:quimperemanuel@gmail.com">EMAIL</a>
+          ? <div>
+              <h1>EQuimper</h1>
+              <div className="link-container">
+                <Link href="/articles">
+                  <a>ARTICLES</a>
+                </Link>
+                <a href="mailto:quimperemanuel@gmail.com">EMAIL</a>
+              </div>
             </div>
           : <h3>Welcome to my blog!</h3>}
 
         <style jsx>{`
           .link-container {
-            display: flex;
-            width: 40%;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
+            flex: none;
+            text-align: center;
+            margin-top: 20px;
           }
 
           h3 {
             color: ${colors.secondary};
           }
 
+          h1 {
+            font-size: 20px;
+            font-weight: normal;
+            color: ${colors.accent};
+            text-align: center;
+          }
+
+
           a {
             color: ${colors.secondary};
             font-size: 20px;
+            display: inline-block;
+            margin: 0 15px;
+            text-decoration: none;
           }
 
           a:hover {
             color: ${colors.accent};
             text-decoration: underline;
-          }
-
-          @media (max-width: 1000px) {
-            .link-container {
-              width: 95%;
-            }
           }
         `}</style>
       </Page>

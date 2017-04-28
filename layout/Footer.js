@@ -17,7 +17,7 @@ export default () => (
         <FontAwesome size="2x" name="github" />
       </a>
       <a
-        href="https://www.youtube.com/channel/UC7R7bcH9-KEBDiGNP1mZnmw"
+        href="https://www.youtube.com/channel/UC7R7bcH9-KEBDiGNP2mZnmw"
         rel="noopener noreferrer"
         target="_blank"
       >
@@ -56,7 +56,7 @@ export default () => (
 
       .social-icons {
         display: flex;
-        width: 200px;
+        width: 125px;
         align-self: stretch;
         align-items: center;
         flex-direction: row;

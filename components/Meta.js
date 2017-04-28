@@ -3,6 +3,7 @@ import NProgress from 'nprogress';
 import Router from 'next/router';
 
 import colors from '../constants/colors';
+import config from '../constants/config';
 
 Router.onRouteChangeStart = () => NProgress.start();
 Router.onRouteChangeComplete = () => NProgress.done();
@@ -16,6 +17,16 @@ export default () => (
       <link
         rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', '${config.GA_ID}', 'auto');
+        ga('send', 'pageview');`,
+        }}
       />
     </Head>
 

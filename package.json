@@ -5,6 +5,10 @@
   "main": "index.js",
   "author": "Emanuel Quimper",
   "license": "MIT",
+  "now": {
+    "name": "app-name",
+    "alias": "equimper.me"
+  },
   "pre-commit": "lint-staged",
   "lint-staged": {
     "*.js": [
@@ -16,7 +20,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node index.js",
     "prettier": "node ./scripts/prettier.js write",
     "lint-staged": "lint-staged"
   },
