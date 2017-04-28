@@ -1309,8 +1309,8 @@ debug@2.6.1:
     ms "0.7.2"
 
 debug@^2.1.1, debug@^2.2.0:
-  version "2.6.5"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.5.tgz#7a76247781acd4ef2a85f0fb8abf763cd1af249e"
+  version "2.6.6"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.6.tgz#a9fa6fbe9ca43cf1e79f73b75c0189cbb7d6db5a"
   dependencies:
     ms "0.7.3"
 
@@ -3306,9 +3306,15 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@15.5.7, prop-types@^15.5.3, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.7, prop-types@~15.5.7:
+prop-types@15.5.7:
   version "15.5.7"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.7.tgz#231c4f29cdd82e355011d4889386ca9059544dd1"
+  dependencies:
+    fbjs "^0.8.9"
+
+prop-types@^15.5.3, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.7, prop-types@~15.5.7:
+  version "15.5.8"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.8.tgz#6b7b2e141083be38c8595aa51fc55775c7199394"
   dependencies:
     fbjs "^0.8.9"
 
